@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>TwitchTV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="twitchTV.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="text-center" id="header">
+      <h1>Twitch TV</h1>
+      <a href="https://www.twitch.tv/freecodecamp" target="blank"><p id="freeCodeCampStatus"> </p></a>
+      <form>
+      <input type="radio" name="channel" id="all" checked>
+      <label for="all"> All</label>
+      <input type="radio" name="channel" id="online">
+      <label for="online"> Online</label>
+      <input type="radio" name="channel" id="offline">
+      <label for="offline"> Offline</label>
+        </form>
+    </div>
+    <div class="row" id="rowHeader" >
+
+      <div class="col-md-4">
+        Icon
+      </div>
+      <div class="col-md-4">
+       Channel
+      </div>
+
+      <div class="col-md-4">
+      Status
+        </div>
+
+    </div>
+
+      <div id="follower">
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="twitchTV.js"></script>
+</body>
