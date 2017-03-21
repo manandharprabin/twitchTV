@@ -3,7 +3,7 @@ var users = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "
 function twitchtv() {
   $.ajax({
     "type": 'GET',
-    "url": "https://wind-bow.gomix.me/twitch-api/streams/freecodecamp",
+    "url": "https://wind-bow.glitch.me/twitch-api/streams/freecodecamp",
     "success": function(data1) {
       if (data1.stream == null) {
         $("#freeCodeCampStatus").html("FreeCodeCamp is Offline.");
@@ -22,7 +22,7 @@ function twitchtv() {
 
   users.forEach(function(user) {
     function getUrl(urltyp, username) {
-      return "https://wind-bow.gomix.me/twitch-api/" + urltyp + "/" + username;
+      return "https://wind-bow.glitch.me/twitch-api/" + urltyp + "/" + username;
     };
 
     $.getJSON(getUrl("streams", user), function(data) {
